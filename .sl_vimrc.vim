@@ -16,13 +16,6 @@ set path+=**
 " show buffers
 nnoremap <leader>o :ls<CR>
 
-" Automatically inser a closing parenthesis when typing
-inoremap ( ()<Esc>i
-inoremap { {}<Esc>i
-inoremap [ {}<Esc>i
-inoremap " ""<Esc>i
-inoremap ' ''<Esc>i
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
