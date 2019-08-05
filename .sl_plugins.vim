@@ -25,4 +25,44 @@ let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
 let g:ctrlp_open_multiple_files = 'i'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Syntastic (syntax checker)
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" let g:ale_linters = {
+"  \   'javascript': ['eslint'],
+"  \   'python': ['flake8'],
+"  \   'go': ['go', 'golint', 'errcheck']
+"  \}
 
+let b:ale_linters = ['eslint']
+
+let g:ale_fix_on_save = 1
+
+nmap <silent> <leader>a <Plug>(ale_next_wrap)
+
+" Only run linting when saving the file
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_enter = 0
+
+let g:jsx_ext_required = 0
+let g:ale_linters = {
+\   'javascript': ['eslint'],
+\}
+let g:ale_fixers = {
+\   'javascript': ['prettier', 'eslint'],
+\   'typescript': ['prettier', 'eslint'],
+\   'json': ['prettier'],
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+
+" Signal ALE uses
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_text_changed = 'never'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+let g:ale_linters_explicit = 1
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+let g:ale_javascript_prettier_options = '--no-semi --single-quote none'
