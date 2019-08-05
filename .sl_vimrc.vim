@@ -16,6 +16,13 @@ set path+=**
 " show buffers
 nnoremap <leader>o :ls<CR>
 
+" Automatically inser a closing parenthesis when typing
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap [ {}<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -247,8 +254,8 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 map 0 ^
 
 " Move a line of text using ALT+[jk] or Command+[jk] on mac
-nnoremap <S-Up> :m+<CR>
-nnoremap <S-Down> :m-2<CR> 
+nnoremap <S-Up> :m-2<CR> 
+nnoremap <S-Down> :m+<CR>
 inoremap <S-Up> <Esc>:m-2<CR>
 inoremap <S-Down> <Esc>:m+<CR>
 vmap <S-Down> :m'>+<cr>`<my`>mzgv`yo`z
