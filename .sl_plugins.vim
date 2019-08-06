@@ -47,6 +47,7 @@ let g:ale_lint_on_enter = 0
 let g:jsx_ext_required = 0
 let g:ale_linters = {
 \   'javascript': ['eslint'],
+\   'typescript': ['tsserver']
 \}
 let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
@@ -66,3 +67,27 @@ let g:ale_linters_explicit = 1
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 let g:ale_javascript_prettier_options = '--no-semi --single-quote none'
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => lightline
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:lightline = {
+      \ 'colorscheme': 'seoul256',
+      \ 'active': {
+      \   'left': [ ['mode', 'paste'],
+      \             ['fugitive', 'readonly', 'filename', 'modified'] ],
+      \   'right': [ [ 'lineinfo' ], ['percent'] ]
+      \ },
+      \ 'component': {
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',
+      \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
+      \ },
+      \ 'component_visible_condition': {
+      \   'readonly': '(&filetype!="help"&& &readonly)',
+      \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
+      \ },
+      \ 'separator': { 'left': ' ', 'right': ' ' },
+      \ 'subseparator': { 'left': ' ', 'right': ' ' }
+      \ }
