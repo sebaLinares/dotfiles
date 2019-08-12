@@ -47,7 +47,7 @@ let g:ale_lint_on_enter = 0
 let g:jsx_ext_required = 0
 let g:ale_linters = {
 \   'javascript': ['eslint'],
-\   'typescript': ['tsserver']
+\   'typescript': ['eslint']
 \}
 let g:ale_fixers = {
 \   'javascript': ['prettier', 'eslint'],
