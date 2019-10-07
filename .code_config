@@ -1,0 +1,174 @@
+ndow.zoomLevel": 0,
+  "editor.fontSize": 14,
+    "editor.fontFamily": "'Fira Code'",
+      "editor.fontLigatures": true,
+        "editor.fontWeight": "400",
+          "editor.lineHeight": 16,
+            "editor.wordWrap": "on",
+              "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                  "editor.multiCursorModifier": "ctrlCmd",
+                    "editor.smoothScrolling": true,
+                      "search.exclude": {
+                            "**/vendor": true
+                              },
+                                "workbench.statusBar.visible": true,
+                                  "workbench.activityBar.visible": true,
+                                    "explorer.confirmDelete": false,
+                                      "explorer.confirmDragAndDrop": false,
+                                        "workbench.colorCustomizations": {
+                                              "tab.activeBackground": "#282c34",
+                                                  "activityBar.background": "#282c34",
+                                                      "sideBar.background": "#282c34"
+                                                        },
+                                                          "typescript.updateImportsOnFileMove.enabled": "always",
+                                                            "editor.tabSize": 2,
+                                                              "workbench.startupEditor": "newUntitledFile",
+                                                                "workbench.iconTheme": "material-icon-theme",
+                                                                  "editor.minimap.enabled": false,
+                                                                    "vim.easymotion": true,
+                                                                      "vim.sneak": true,
+                                                                        "vim.incsearch": true,
+                                                                          "vim.useSystemClipboard": true,
+                                                                            "vim.useCtrlKeys": true,
+                                                                              "vim.hlsearch": true,
+                                                                              "vim.insertModeKeyBindings": [
+{
+  "before": [
+          "j",
+                  "j"
+                        
+  ],
+  "after": [
+          "<Esc>"
+                
+  ]
+      
+}
+  
+                                                                              ],
+                                                                              "vim.insertModeKeyBindingsNonRecursive": [
+                                                                                  // clog( === console.log()
+{
+  "before": [
+          "c",
+                  "l",
+                          "o",
+                                  "g",
+                                  "("
+                                        ],
+                                        "after": [
+                                                "c",
+                                                        "o",
+                                                                "n",
+                                                                        "s",
+                                                                                "o",
+                                                                                        "l",
+                                                                                                "e",
+                                                                                                        ".",
+                                                                                                                "l",
+                                                                                                                        "o",
+                                                                                                                                "g",
+                                                                                                                                "("
+                                                                                                                                      ]
+                                                                                                                                          }
+                                                                                                                                            ],
+                                                                                                                                            "vim.normalModeKeyBindingsNonRecursive": [
+{
+  "before": [
+          "<leader>",
+                  "d"
+                        
+  ],
+  "after": [
+          "d",
+                  "d"
+                        
+  ]
+      
+},
+    // Erase hightlight search
+{
+  "before": [
+          "<leader>",
+                  "<CR>"
+                        
+  ],
+  "commands": [
+          ":nohl"
+                
+  ]
+      
+},
+    // Surround with double quotes
+{
+  "before": [
+          "<leader>",
+                  "\""
+                        
+  ],
+  "after": [
+          "v",
+                  "i",
+                          "w",
+                                  "c",
+                                          "\"",
+                                                  "<Esc>",
+                                                          "p"
+                                                                
+  ]
+      
+},
+  
+                                                                                                                                            ],
+                                                                                                                                              "vim.leader": "<space>",
+                                                                                                                                              "vim.handleKeys": {
+                                                                                                                                                    "<C-a>": false,
+                                                                                                                                                        "<C-f>": false
+                                                                                                                                                          
+                                                                                                                                              },
+                                                                                                                                                "editor.lineNumbers": "relative",
+                                                                                                                                                  "typescript.tsdk": "/Users/Seba/.config/yarn/global/node_modules/typescript/lib/",
+                                                                                                                                                  "[typescript]": {
+                                                                                                                                                    "editor.quickSuggestions": {
+                                                                                                                                                            "other": true,
+                                                                                                                                                                  "comments": false,
+                                                                                                                                                                        "strings": false
+                                                                                                                                                                            
+                                                                                                                                                    }
+                                                                                                                                                      
+                                                                                                                                                  },
+                                                                                                                                                    "editor.quickSuggestionsDelay": 100,
+                                                                                                                                                    "eslint.validate": [
+                                                                                                                                                        "javascript",
+                                                                                                                                                            "javascriptreact",
+{
+        "language": "typescript",
+              "autoFix": true
+                  
+},
+{
+        "language": "typescriptreact",
+              "autoFix": true
+                  
+}
+  
+                                                                                                                                                    ],
+                                                                                                                                                      "vsicons.dontShowNewVersionMessage": true,
+                                                                                                                                                        "diffEditor.ignoreTrimWhitespace": true,
+                                                                                                                                                          "javascript.updateImportsOnFileMove.enabled": "always",
+                                                                                                                                                            "terminal.integrated.rendererType": "dom",
+                                                                                                                                                              "javascript.validate.enable": false,
+                                                                                                                                                              "emmet.includeLanguages": {
+                                                                                                                                                                    "javascript": "javascriptreact"
+                                                                                                                                                                    
+                                                                                                                                                              },
+                                                                                                                                                              "editor.renderWhitespace": "all"
+                                                                                                                                                            }
+
+                                                                                                                                  ")"
+                                        ]
+                                    ")"
+  ]
+})
+                                                                              ]"
