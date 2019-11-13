@@ -6,8 +6,6 @@
   "editor.fontWeight": "400",
   "editor.lineHeight": 16,
   "editor.wordWrap": "on",
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.smoothScrolling": true,
   "search.exclude": {
@@ -122,7 +120,7 @@
       "strings": false
     }
   },
-  "editor.quickSuggestionsDelay": 100,
+  "editor.quickSuggestionsDelay": 50,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
@@ -142,6 +140,28 @@
   "javascript.validate.enable": false,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-},
-"editor.renderWhitespace": "all"
+  },
+  "editor.renderWhitespace": "all",
+  "prettier.jsxBracketSameLine": true,
+  // "editor.formatOnSave": true,
+  // turn it off for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  // tell the ESLint plugin to run on save
+  "eslint.autoFixOnSave": true,
+  // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+  "prettier.disableLanguages": [
+    "javascript",
+    "javascriptreact"
+  ],
+  "workbench.colorTheme": "Night Owl",
+  "window.nativeTabs": true,
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "extensions.ignoreRecommendations": false,
 }
