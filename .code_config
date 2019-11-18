@@ -166,4 +166,6 @@
   "extensions.ignoreRecommendations": false,
   "vim.statusBarColorControl": false,
   "zenMode.hideTabs": false,
+  "zenMode.restore": true,
+  "zenMode.hideLineNumbers": false,
 }
