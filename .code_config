@@ -164,4 +164,6 @@
     "editor.defaultFormatter": "mtxr.sqltools"
   },
   "extensions.ignoreRecommendations": false,
+  "vim.statusBarColorControl": false,
+  "zenMode.hideTabs": false,
 }
