@@ -19,5 +19,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-surround'
+Plug 'alvan/vim-closetag'
 
 call plug#end()

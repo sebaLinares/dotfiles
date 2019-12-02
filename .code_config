@@ -168,4 +168,15 @@
   "zenMode.hideTabs": false,
   "zenMode.restore": true,
   "zenMode.hideLineNumbers": false,
+  "vim.enableNeovim": true,
+  "vim.neovimPath": "/usr/local/bin/nvim",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/bower_components": true,
+    "**/jspm_packages": true,
+    "**/node_modules": true
+  }
 }
