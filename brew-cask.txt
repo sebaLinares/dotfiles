@@ -1,0 +1,11 @@
+adoptopenjdk8
+font-fira-code
+font-fira-mono
+font-fira-mono-for-powerline
+font-fira-sans
+font-hack-nerd-font
+hyper
+insomnia
+java
+mysqlworkbench
+skyfonts

@@ -1,0 +1,71 @@
+# The theme used in oh-my-zsh
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# """""""""""""""" #
+# Spaceship Config #
+# ################ #
+# Time options
+SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_COLOR=green
+
+# Node options
+SPACESHIP_NODE_SHOW=false
+
+# Prompt options
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+
+# Package version
+SPACESHIP_PACKAGE_SHOW=false
+
+# """"""""""""" #
+# Alias Folders #
+# ############# #
+alias home="cd ~"
+alias dtop="cd ~/Desktop"
+alias docs="cd ~/Documents && l"
+alias dloads="cd ~/Downloads && l"
+
+# Go to /Projects
+alias pjects="cd ~/Documents/Projects && l"
+
+# Go to /Learning
+alias lning="cd ~/Documents/Learning && l"
+
+# """""""""""""""""""" #
+# Alias Folder Comands #
+# #################### #
+alias c="clear"
+alias h="history"
+alias pd="pwd"
+alias ll="ls -hla"
+
+# """""""""""""""""""" #
+# Alias Folder Comands #
+# #################### #
+alias zshfile="vim ~/.zshrc"
+alias zshpfile="vim ~/.zshrc_SEBA_LINARES/.personal_zshrc"
+alias vimfolder="cd ~/.vim_runtime && l"
+
+# """""""""""""""" #
+# Alias for Scripts #
+# ################ #
+alias slcra="~/Documents/Projects/scripts/start_react_project.sh"
+
+
+# """""""""""""""" #
+# Alias ctags #
+# ################ #
+alias ctags="`brew --prefix`/bin/ctags"
+alias ctags >> ~/.bashrc
+
+
+# """""""""""""""" #
+# Alias colorls #
+# ################ #
+alias lc='colorls -lA --sd'
+
+# Remove beep from hyper.js
+unsetopt beep
+
+# Enable tab completion for flags
+# source $(dirname $(gem which colorls))/tab_complete.sh
