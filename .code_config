@@ -168,6 +168,7 @@
   "zenMode.hideTabs": false,
   "zenMode.restore": true,
   "zenMode.hideLineNumbers": false,
+  "zenMode.fullScreen": true,
   "vim.enableNeovim": true,
   "vim.neovimPath": "/usr/local/bin/nvim",
   "files.exclude": {
