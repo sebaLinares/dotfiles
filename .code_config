@@ -1,190 +1,124 @@
 {
-    "window.zoomLevel": 0,
-    "editor.fontSize": 14,
-    "editor.fontFamily": "'Fira Code'",
-    "editor.fontLigatures": true,
-    "editor.fontWeight": "400",
-    "editor.lineHeight": 16,
-    "editor.wordWrap": "on",
-    "editor.multiCursorModifier": "ctrlCmd",
-    "editor.smoothScrolling": true,
-    "search.exclude": {
-      "**/vendor": true
-    },
-    "workbench.statusBar.visible": true,
-    "workbench.activityBar.visible": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.colorCustomizations": {
-      "tab.activeBackground": "#282c34",
-      "activityBar.background": "#282c34",
-      "sideBar.background": "#282c34"
-    },
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "editor.tabSize": 2,
-    "workbench.startupEditor": "newUntitledFile",
-    "editor.minimap.enabled": false,
-    "vim.easymotion": true,
-    "vim.sneak": true,
-    "vim.incsearch": true,
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.insertModeKeyBindings": [
-      {
-        "before": [
-          "j",
-          "j"
-        ],
-        "after": [
-          "<Esc>"
-        ]
-      }
-    ],
-    "vim.insertModeKeyBindingsNonRecursive": [
-      // clog( === console.log()
-      {
-        "before": [
-          "c",
-          "l",
-          "o",
-          "g",
-          "("
-        ],
-        "after": [
-          "c",
-          "o",
-          "n",
-          "s",
-          "o",
-          "l",
-          "e",
-          ".",
-          "l",
-          "o",
-          "g",
-          "("
-        ]
-      }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-      {
-        "before": [
-          "<leader>",
-          "d"
-        ],
-        "after": [
-          "d",
-          "d"
-        ]
-      },
-      // Erase hightlight search
-      {
-        "before": [
-          "<leader>",
-          "<CR>"
-        ],
-        "commands": [
-          ":nohl"
-        ]
-      },
-      // Surround with double quotes
-      {
-        "before": [
-          "<leader>",
-          "\""
-        ],
-        "after": [
-          "v",
-          "i",
-          "w",
-          "c",
-          "\"",
-          "<Esc>",
-          "p"
-        ]
-      },
-    ],
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-      "<C-a>": false,
-      "<C-f>": false
-    },
-    "editor.lineNumbers": "relative",
-    "typescript.tsdk": "/Users/Seba/.config/yarn/global/node_modules/typescript/lib/",
-    "[typescript]": {
-      "editor.quickSuggestions": {
-        "other": true,
-        "comments": false,
-        "strings": false
-      }
-    },
-    "editor.quickSuggestionsDelay": 50,
-    "eslint.validate": [
-      "javascript",
-      "javascriptreact",
-      {
-        "language": "typescript",
-        "autoFix": true
-      },
-      {
-        "language": "typescriptreact",
-        "autoFix": true
-      }
-    ],
-    "vsicons.dontShowNewVersionMessage": true,
-    "diffEditor.ignoreTrimWhitespace": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "terminal.integrated.rendererType": "dom",
-    "javascript.validate.enable": false,
-    "emmet.includeLanguages": {
-      "javascript": "javascriptreact"
-    },
-    "editor.renderWhitespace": "all",
-    "prettier.jsxBracketSameLine": true,
-    // "editor.formatOnSave": true,
-    // turn it off for JS and JSX, we will do this via eslint
-    "[javascript]": {
-      "editor.formatOnSave": false
-    },
-    "[javascriptreact]": {
-      "editor.formatOnSave": false
-    },
-    // tell the ESLint plugin to run on save
-    "eslint.autoFixOnSave": true,
-    // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
-    "prettier.disableLanguages": [
-      "javascript",
-      "javascriptreact"
-    ],
-    "workbench.colorTheme": "Night Owl",
-    "window.nativeTabs": true,
-    "[sql]": {
-      "editor.defaultFormatter": "mtxr.sqltools"
-    },
-    "extensions.ignoreRecommendations": false,
-    "vim.statusBarColorControl": false,
-    "zenMode.hideTabs": false,
-    "zenMode.restore": true,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.centerLayout": false,
-    "vim.enableNeovim": true,
-    "vim.neovimPath": "/usr/local/bin/nvim",
-    "files.exclude": {
-      "**/.git": true,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/.DS_Store": true,
-      "**/bower_components": true,
-      "**/jspm_packages": true,
-      "**/node_modules": true
-    },
-    "workbench.iconTheme": "vscode-icons",
-    "terminal.integrated.shell.osx": "/bin/zsh",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "400",
+  "editor.lineHeight": 16,
+  "editor.wordWrap": "on",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.smoothScrolling": true,
+  "search.exclude": {
+    "**/vendor": true
+  },
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "workbench.colorCustomizations": {
+    "tab.activeBackground": "#282c34",
+    "activityBar.background": "#282c34",
+    "sideBar.background": "#282c34"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.tabSize": 2,
+  "workbench.startupEditor": "newUnitledFile",
+  "editor.minimap.enabled": false,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "c",
+        "l",
+        "o",
+        "g",
+        "("
+      ],
+      "after": [
+        "c",
+        "o",
+        "n",
+        "s",
+        "o",
+        "l",
+        "e",
+        ".",
+        "l",
+        "o",
+        "g",
+        "("
+      ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "d"
+      ],
+      "after": [
+        "d",
+        "d"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "<CR>"
+      ],
+      "commands": [
+        ":nohl"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "\""
+      ],
+      "after": [
+        "v",
+        "i",
+        "w",
+        "c",
+        "\"",
+        "<Esc>",
+        "p"
+      ]
+    },
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "editor.lineNumbers": "relative",
+  "typescript.tsdk": "/Users/Seba/.config/yarn/global/node_modules/typescript/lib/",
+  "[typescript]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "editor.quickSuggestionsDelay": 50,
+  "workbench.iconTheme": "vscode-icons",
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "vsicons.dontShowNewVersionMessage": true,
   "diffEditor.ignoreTrimWhitespace": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -203,8 +137,6 @@
   "[javascriptreact]": {
     "editor.formatOnSave": false
   },
-  // tell the ESLint plugin to run on save
-  "eslint.autoFixOnSave": true,
   // Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
   "prettier.disableLanguages": [
     "javascript",
@@ -232,4 +164,4 @@
     "**/jspm_packages": true,
     "**/node_modules": true
   }
-  
+}
