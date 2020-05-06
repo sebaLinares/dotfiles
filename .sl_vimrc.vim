@@ -1,6 +1,6 @@
 " Copy and paste from outside vim
 vnoremap <C-c> "+y
-nnoremap <C-p> "+P
+" nnoremap <C-P> "+P
 
 " Start number and relative number by default
 set number
@@ -11,17 +11,19 @@ set tags=tags
 
 " Search down into subfolders
 " Provides tab-completion for all file-related tasks
-set path+=**
+" set path+=**
 
 " show buffers
 nnoremap <leader>o :ls<CR>
+
+" Do not resize windows automatically
+set noequalalways
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Personal mapping
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "console log
-inoremap clog() console.log()<Esc>i
-
+inoremap clog( console.log()<Esc>i
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -60,6 +62,7 @@ set wildmenu
 " Ignore compiled files
 set wildignore=*.o,*~,*.pyc
 set wildignore+=*/node_modules/*
+set wildignore+=*/dist/*
 if has("win16") || has("win32")
     set wildignore+=.git\*,.hg\*,.svn\*
 else
@@ -120,8 +123,9 @@ set foldcolumn=1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable syntax highlighting
+" Syntax highlight and colorscheme
 syntax enable
+colorscheme night-owl
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
@@ -131,10 +135,6 @@ endif
 if(has("termguicolors"))
   set termguicolors
 endif
-
-" colorscheme
-syntax enable
-colorscheme night-owl
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -354,15 +354,27 @@ function! JavaScriptFold()
 endfunction
 
 
+" asdjlasdljajs the fox adklsasdhladh over the fence
+" the jump fox over the fence
+" fence the fox over jump the
+"
 """"""""""""""""""""""""""""""
 " => Typescript section
 """""""""""""""""""""""""""""""
 au FileType typescript call TypescriptFold()
+au FileType javascript setl fen
+au FileType javascript setl nocindent
+
+au FileType javascript imap <c-t> $log();<esc>hi
+au FileType javascript imap <c-a> alert();<esc>hi
+
+au FileType javascript inoremap <buffer> $r return
+au FileType javascript inoremap <buffer> $f // --- PH<esc>FP2xi
 
 function! TypescriptFold()
     set foldcolumn=1
-    setl foldmethod=manual
-    setl foldlevelstart=99
+    setl foldmethod=syntax
+    setl foldlevelstart=1
     syn region foldBraces start=/{/ end=/}/ transparent fold keepend extend
 
     function! FoldText()
@@ -370,6 +382,8 @@ function! TypescriptFold()
     endfunction
     setl foldtext=FoldText()
 endfunction
+
+
 """"""""""""""""""""""""""""""
 " => Shell section
 """"""""""""""""""""""""""""""
@@ -380,3 +394,26 @@ if exists('$TMUX')
         set term=screen-256color
     endif
 endif
+
+""""""""""""""""""""""""""""""
+" => Terminal
+""""""""""""""""""""""""""""""
+" open new split panes to right and below
+set splitright
+set splitbelow
+
+" turn terminal to normal mode with escape
+tnoremap <Esc> <C-\><C-n>
+
+" start terminal in insert mode
+au BufEnter * if &buftype == 'terminal' | :startinsert | endif
+
+" open terminal on ctrl+n
+function! OpenTerminal()
+  split term://zsh
+  resize 10
+endfunction
+
+nnoremap <c-m> :call OpenTerminal()<CR>
+
+
