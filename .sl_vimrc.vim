@@ -416,4 +416,10 @@ endfunction
 
 nnoremap <c-m> :call OpenTerminal()<CR>
 
+""""""""""""""""""""""""""""""
+" => GitGutter
+""""""""""""""""""""""""""""""
+
+" Update time
+set updatetime=100
 
